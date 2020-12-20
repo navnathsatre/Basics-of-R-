@@ -82,3 +82,62 @@ x=1:5
 y=c(x,7,3)
 y=c(9,x)
 y=c(1,2,x,3,4)
+
+
+#Numeric functions
+log(2) #base e
+log10(2) #base 10
+sin(90)
+cos(45)
+x=1:4;y=rep(5,4)
+length(x)
+mx=max(x)
+# sort() min() unique() range() var() prod() sum() cor()
+
+#Accessing vectors
+x=c(1,5,2,9,3)
+x[1]
+x[2:4]
+x[c(1,4)]
+x[2:length(x)]
+x[4:2] #reverse
+x[x>4]
+x[-1] #except 1st element
+x[c(-2,-3)] #except 2 and 3
+x[-1:-3] #excep 1st to 3rd
+
+#other type of objects
+x=1:6
+y=matrix(x,byrow = T,ncol=2)
+y
+z=c(1,4,7,2,5,8,3,6,9)
+mz=matrix(z,nrow = 3,ncol = 3)
+mz
+nrow(mz)
+ncol(mz)
+dim(mz)
+rowSums(mz)
+colSums(mz)
+
+#data frame
+x=c(5,7,9,2)
+y=1:4
+z=rep(2,4)
+w=seq(1,12,3)
+m=c(1,5)
+n=5:7
+d1=data.frame(x,y)
+d2=data.frame(m,w)
+d3=data.frame(z,n) #error because rows: 4,3
+d4=data.frame("first"=x,"second"=y)
+d4
+d5=data.frame(z,w,row.names = c("r1","r2","r3","r4"))
+colnames(d5)=c("one","two")
+d5
+
+#creating data frame
+d11=edit(as.data.frame(NULL))
+d11
+fix(d11)  # for editing created data frame
+getwd()
+#k=read.table("c:/.... ..",header = T)
