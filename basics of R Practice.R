@@ -141,3 +141,47 @@ d11
 fix(d11)  # for editing created data frame
 getwd()
 #k=read.table("c:/.... ..",header = T)
+
+
+#Accessing data from a data frane
+a<-c(120,140,210,100,90)
+b<-c(90,150,200,80,60)
+df<-data.frame("supply"=a,"demand"=b)
+df
+df$supply[3]     
+df$demand
+df[3,2]
+
+attach(df) #places data frame d in system path
+supply #to access vector supply
+demand[4]
+
+search()
+objects()  #display all objects
+detach(df) #to remove data frame df from system search path
+
+#subset and transform cammands
+attach(df)
+df[1:3,1:2]
+df1=subset(df,demand>100)
+df1
+df2=transform(df,lack=supply-demand)
+df2
+x=c(12,67,32,54,80)
+df3=transform(df2,"X=x")
+df3
+
+x=c(10,15,20,9,13,22)
+y=subset(x,x<15) #subset command used with vector
+y
+
+
+#Residant dat set
+data(Orange)
+data()   #to view all data sets
+data(CO2)
+CO2
+length(CO2)
+nrow(CO2)
+help(CO2)
+fix(CO2) #allow to edit data set
