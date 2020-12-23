@@ -168,7 +168,7 @@ df1
 df2=transform(df,lack=supply-demand)
 df2
 x=c(12,67,32,54,80)
-df3=transform(df2,"X=x")
+df3=transform(df2,"X"=x)
 df3
 
 x=c(10,15,20,9,13,22)
