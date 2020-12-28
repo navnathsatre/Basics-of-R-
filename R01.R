@@ -71,6 +71,16 @@ arr[1,,1]
 arr[,c(1,3),3]
 arr[1,2,3]
 
+#identify rows that meet the conditions
+friend_ages<-c(27,25,29,26)
+friend_ages
+my_friends<-c("Nicolas","Thierry","Bernard","Jerome") 
+my_friends
+my=my_friends[friend_ages<=27]
+my
+
+friend_data <- data.frame(name=my_friends,age=friend_ages,height=c(180,170,185,169))
+friend_ages
 
 
 
