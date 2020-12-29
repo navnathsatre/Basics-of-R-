@@ -82,6 +82,25 @@ my
 friend_data <- data.frame(name=my_friends,age=friend_ages,height=c(180,170,185,169))
 friend_ages
 
+#defined list
+list<-list(Id=c(1,2,3,4),name=c('N','M','Q','R'),mark=c(9,8,7,6))
+list
+list2<-list(list,x,arr)
+list2
+list[[2]]
+class(list2)
+
+
+#Data frame
+DF<-data.frame(Id=c(9,8,7,5),name=c('L','R','F','Z'),mark=c(6,2,4,8))
+DF
+DF2<-data.frame(Id=c(1,2,3,4),name=c('N','M','Q','R'),mark=c(9,8,7,6))
+DF2
+DF[,1]
+DF$name
+DF$Id[1]
+rbind(DF,DF2)
+cbind(DF,DF2)
 
 
 
